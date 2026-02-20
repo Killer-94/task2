@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aadhaar Card</title>
+
+<style>
+body {
+    background: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+
+.aadhaar-card {
+    width: 420px;
+    height: 260px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* TOP STRIP */
+.top-strip {
+    height: 28px;
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.header img {
+    height: 22px;
+}
+
+.header .title {
+    color: #d32f2f;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    padding: 8px 10px;
+}
+
+/* PHOTO */
+.photo {
+    width: 90px;
+    height: 110px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 12px;
+    line-height: 110px;
+}
+
+/* DETAILS */
+.details {
+    flex: 1;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.details p {
+    margin: 4px 0;
+}
+
+/* QR */
+.qr {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 10px;
+    line-height: 75px;
+}
+
+/* CHIP */
+.chip {
+    width: 45px;
+    height: 35px;
+    background: linear-gradient(#ffd54f, #f9a825);
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+/* NUMBER */
+.number {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+.footer {
+    background: #c8e6c9;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+</style>
+</head>
+
+<body>
+
+<div class="aadhaar-card">
+    <div class="top-strip"></div>
+
+    <div class="header">
+        <div>भारत सरकार</div>
+        <div class="title">GOVERNMENT OF INDIA</div>
+        <div>आधार</div>
+    </div>
+
+    <div class="content">
+        <div class="photo">Photo</div>
+
+        <div class="details">
+            <p><b>Name:</b>N Vamshi</p>
+            <p><b>DOB:</b> 19-06-2006</p>
+            <p><b>Gender:</b> MALE</p>
+            <div class="number">1234 5678 9000</div>
+        </div>
+
+        <div>
+            <div class="qr">QR</div>
+            <div class="chip"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        मेरा आधार, मेरी पहचान
+    </div>
+</div>
+
+</body>
+</html>
